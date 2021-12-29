@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img [src]="" alt="LOGO"></ion-img>
+  <div>
+    <ion-label>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-label>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-button (click)="logar()">Logar</ion-button>
+  </div>
+  <div class="alternativo"> 
+    <ion-label>Cadastro</ion-label>
+    <ion-label>Recuperar senha</ion-label>
+  </div>
+
+
+</ion-content>
