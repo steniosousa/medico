@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-label>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-label>Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    <ion-button ngIf="!autenticacao" (click)="cadastrar()">Cadastrar</ion-button>
+  </div>
+
+</ion-content>
