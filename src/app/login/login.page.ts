@@ -27,11 +27,13 @@ export class LoginPage implements OnInit {
   }
   async logar(){
     const result = await signInWithEmailAndPassword(this.auth, this.email, this.password);
-    console.log(result);
-    this.router.navigate(['/folder/Inbox'])
+    this.router.navigate(['/folder/home'])
   }
   cadastro(){
-    this.router.navigate(['/cadastro'])
+    this.router.navigate(['./cadastro'])
+  }
+  recuperar(){
+    this.router.navigate(['/recuperar-senha'])
   }
 
 }
